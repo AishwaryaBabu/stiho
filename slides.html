@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Slider</title>
+
+<style type = "text/css">
+.slider{
+	width: 800px;
+	height: 350px;
+	overflow: hidden;
+	margin: 30px auto;
+/*	background-image:url(images/loader.gif);
+	background-repeat:no-repeat;
+	background-position:center;*/
+}
+
+.slider img{
+	width: 800px;
+	height:350px;
+	display:none;	
+}
+
+.shadow{
+	backround-image:url(images/shadow.png);
+	background-repeat:no-repeat;
+	width: 950px;
+	height:153px;
+	margin: -25px auto;
+}
+
+</style>
+
+<script type="text/javascript" src="js/unslider.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body>
+
+	<div class = "slider">
+    <img id="0" src = "images/pic1.jpg"/>
+    <img id="1" src = "images/pic2.jpeg" />
+    <img id="2" src = "images/pic3.jpg"/>
+    <img id="3" src = "images/pic4.jpeg" /> 
+    </div>
+
+	<div class="shadow"> 
+    <img src = "images/shadow.png" />
+    </div>
+    
+    <div id="buttons">
+    </div>
+
+<script type="text/javascript">
+	$(function ready(){
+		var timeoutID = null;
+		var size = $(".slider img").size();
+		
+		function Show(image){
+			clearTimeout(timeoutID);
+			$(".slider img").hide("slide",{direction:"left"}, 500);
+			$(".slider #"+image).delay(500).show("slide", {direction:"right"},500);
+			
+			timeoutID = setTimeout(function(){
+				Show((image+1) % size);
+			}, 4000);
+		}
+		
+		function foo(x){
+			return function(){ Show(x); }
+		}
+		
+		for(var i=0; i<size; i++) {
+			$("<button>")
+			.html("Button " + i)
+			.click(foo(i))
+			.appendTo("#buttons");
+		}
+		
+		Show(0);
+	});
+</script>
+
+</body>
+</html>

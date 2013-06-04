@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.slider{
+	width: 800px;
+	height: 350px;
+	overflow: hidden;
+	margin: 30px auto;
+/*	background-image:url(images/loader.gif);
+	background-repeat:no-repeat;
+	background-position:center;*/
+}
+
+.slider img{
+	width: 800px;
+	height:350px;
+	display:none;	
+}
+
+.shadow{
+	backround-image:url(images/shadow.png);
+	background-repeat:no-repeat;
+	width: 950px;
+	height:153px;
+	margin: -25px auto;
+}
+
+
