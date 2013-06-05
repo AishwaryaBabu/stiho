@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+    .slider {
+      width: 400px; height: 440px;
+      overflow: hidden;
+      position: relative; /* for overflow: hidden to work in IE7 */
+	  margin:auto;
+	  background-color:#333333;
+	  top:10px;
+	 -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    }
+      .slider > ul {
+        /* styled by JS to match the added width and height of all <li>â€™s */
+        position: relative;
+        -webkit-transition: .5s left;
+        -moz-transition: .5s left;
+        -ms-transition: .5s left;
+        -o-transition: .5s left;
+
+        list-style: none;
+        margin: 0; padding: 0;
+      }
+        .slider > ul > li {
+          float: left;
+          width: 400px; height: 400px;
+		  padding-top:20px;
+        }
+		
+		.navigation{
+			margin:auto;
+		}

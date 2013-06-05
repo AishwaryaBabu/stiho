@@ -1,8 +1,25 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+.outer_slider {
+    position: relative;
+	top: 30px;
+    width: 780px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 5px;
+ 
+    background:#333333;
+ 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
 .slider{
-	width: 800px;
+	width: 780px;
 	height: 350px;
 	overflow: hidden;
 	margin: 30px auto;
@@ -10,11 +27,16 @@
 	background-repeat:no-repeat;
 	background-position:center;*/
 }
-
+		
 .slider img{
-	width: 800px;
+	width: 780px;
 	height:350px;
 	display:none;	
+}
+
+.buttons{
+	position:absolute;
+	margin: 0 auto;
 }
 
 .shadow{
@@ -22,7 +44,5 @@
 	background-repeat:no-repeat;
 	width: 950px;
 	height:153px;
-	margin: -25px auto;
+	margin: -10px auto;
 }
-
-
