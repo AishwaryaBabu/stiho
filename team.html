@@ -3,17 +3,28 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/team_style.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="js/team_js.js"/></script>
+
     <title>Team</title>
   </head>
   <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
     <div class="colorstrip_topmenu"></div>
+    <div class="colorstrip_image"></div>
     <div class="container">
+       <div class="picture">
+      	<div class="intro">
+       		<div class="intro_text">
+        		The <highlight>brains</highlight> behind the work
+        	</div>
+		</div>
+        <img src="images/header-image-small.jpg" />
+      </div>
+    
+       <!-- Top Menu -->
       <div id="topmenu" class="topmenu" >
         <h2>
           <a href="trial.html">App</a>
@@ -22,25 +33,79 @@
           <a href="http://medialab.hva.nl/stiho" target="_blank">Blog</a> 
         </h2>
       </div>
-      <div class="slider">
-        <ul>
-          <li><img src="team_images/1.jpg" width="400px" height="400px"></li>
-          <li><img src="team_images/2.jpg" width="400px" height="400px"></li>
-          <li><img src="team_images/3.jpg" width="400px" height="400px"></li>
-          <li><img src="team_images/4.jpg" width="400px" height="400px"></li>
-        </ul>
+      
+	   <div class="team_image">
+       	<img src="team_images/team.jpg" />
+       </div>
+      
+      <!-- Individual Info-->
+      <div class="info">
+        <div id="tab1" class="section">
+          <div class="person">
+            <div class="name">
+          		<h1>Linda</h1>
+          	</div>
+          	<div class="flag">
+          		<img src="team_images/dutch-flag.jpg" />
+          	</div>
+           </div>
+          <a href="http://www.linkedin.com/profile/view?id=139051282&locale=en_US&trk=tyah" target="_blank">
+            <div class="linkedin"><img src="team_images/linkedin-icon.jpg" /> </div>
+          </a>
+        </div>
+        <div id="tab2" class="section">
+          <div class="person">
+            <div class="name">
+          		<h1>Sabrina</h1>
+          	</div>
+          	<div class="flag">
+          		<img src="team_images/dutch-flag.jpg" />
+          	</div>
+           </div>
+          <a href="#linkedin2" target="_blank">
+            <div class="linkedin"><img src="team_images/linkedin-icon.jpg" /> </div>
+          </a>
+        </div>
+        <div id="tab3" class="section">
+          <div class="person">
+            <div class="name">
+          		<h1>Aishwarya</h1>
+          	</div>
+          	<div class="flag">
+          		<img src="team_images/indian-flag.jpg" />
+          	</div>
+           </div>
+          <a href="http://www.linkedin.com/profile/view?id=55344119&trk=nav_responsive_tab_profile" target="_blank">
+            <div class="linkedin"><img src="team_images/linkedin-icon.jpg" /> </div>
+          </a>
+        </div>
+        <div id="tab4" class="section">
+          <div class="person">
+            <div class="name">
+          		<h1>Jelmar</h1>
+          	</div>
+          	<div class="flag">
+          		<img src="team_images/dutch-flag.jpg" />
+          	</div>
+           </div>
+          <a href="http://www.linkedin.com/profile/view?id=72302597&locale=en_US&trk=tyah" target="_blank">
+            <div class="linkedin"><img src="team_images/linkedin-icon.jpg" /> </div>
+          </a>
+        </div>
       </div>
-      <script>
-        var sliders = []
-        $('.slider').each(function() {
-          sliders.push(new Slider(this))
-        })
-      </script>
-      <div class="navigation">
-        <a href="javascript:sliders[0].goTo(0)"><img src="images/bullet.png" /></a>
-        <a href="javascript:sliders[0].goTo(1)"><img src="images/bullet.png" /></a>
-        <a href="javascript:sliders[0].goTo(2)"><img src="images/bullet.png" /></a>
-        <a href="javascript:sliders[0].goTo(3)"><img src="images/bullet.png" /></a>
+      
+      <div class="map">
+
+      <iframe width="1080" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=MediaLAB+Amsterdam,+Wibautstraat+2,+Amsterdam,+Netherlands&amp;aq=0&amp;oq=med&amp;sll=37.0625,-95.677068&amp;sspn=51.310143,132.978516&amp;ie=UTF8&amp;hq=MediaLAB&amp;hnear=Wibautstraat+2,+1091+GM+Watergraafsmeer,+Amsterdam,+Noord-Holland,+The+Netherlands&amp;t=m&amp;ll=52.359687,4.908471&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=MediaLAB+Amsterdam,+Wibautstraat+2,+Amsterdam,+Netherlands&amp;aq=0&amp;oq=med&amp;sll=37.0625,-95.677068&amp;sspn=51.310143,132.978516&amp;ie=UTF8&amp;hq=MediaLAB&amp;hnear=Wibautstraat+2,+1091+GM+Watergraafsmeer,+Amsterdam,+Noord-Holland,+The+Netherlands&amp;t=m&amp;ll=52.359687,4.908471&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+      </div>
+      
+    </div>
+    
+        <!-- Footer -->
+    <div class="footer">
+      <div class="footer_container">
+        <h2> This is the footer content</h2>
       </div>
     </div>
   </body>

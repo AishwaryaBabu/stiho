@@ -1,31 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/slides_style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/process_style.css"/>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Slider</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src = "js/slider.js"></script>
+    <title>Team</title>
   </head>
   <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <div class="colorstrip_topmenu"></div>
+    <div class="colorstrip_image"></div>
     <div class="container">
-      <div class="outer_slider">
-        <div class = "slider">
-          <img id="0" src = "images/pic1.jpg" alt=""/>
-          <img id="1" src = "images/pic2.jpeg" alt="" /> 
-          <img id="2" src = "images/pic3.jpg" alt=""/>
-          <img id="3" src = "images/pic4.jpeg" alt=""/> 
-        </div>
-        <div id="buttons_area" class="buttons">
-        </div>
+       <div class="picture">
+      	<div class="intro">
+       		<div class="intro_text">
+        		The <highlight>brains</highlight> behind the work
+        	</div>
+		</div>
+        <img src="images/header-image-small.jpg" />
       </div>
-      <div class="shadow"> 
-        <img src = "images/shadow.png" />
-      </div>
+    
       <div id="topmenu" class="topmenu" >
         <h2>
           <a href="trial.html">App</a>
@@ -33,6 +29,33 @@
           <a href="team.html">Team</a> 
           <a href="http://medialab.hva.nl/stiho" target="_blank">Blog</a> 
         </h2>
+      </div>
+      <div class="slider">
+        <ul>
+          <li><img src="team_images/1.jpg" width="500px" height="500px"></li>
+          <li><img src="team_images/2.jpg" width="500px" height="500px"></li>
+          <li><img src="team_images/3.jpg" width="500px" height="500px"></li>
+          <li><img src="team_images/4.jpg" width="500px" height="500px"></li>
+        </ul>
+      </div>
+      <script>
+        var sliders = []
+        $('.slider').each(function() {
+          sliders.push(new Slider(this))
+        })
+      </script>
+      <div class="navigation">
+        <a href="javascript:sliders[0].goTo(0)"><img src="images/bullet.png" /></a>
+        <a href="javascript:sliders[0].goTo(1)"><img src="images/bullet.png" /></a>
+        <a href="javascript:sliders[0].goTo(2)"><img src="images/bullet.png" /></a>
+        <a href="javascript:sliders[0].goTo(3)"><img src="images/bullet.png" /></a>
+      </div>
+    </div>
+    
+        <!-- Footer -->
+    <div class="footer">
+      <div class="footer_container">
+        <h2> This is the footer content</h2>
       </div>
     </div>
   </body>
