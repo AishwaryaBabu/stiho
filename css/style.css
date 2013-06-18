@@ -75,7 +75,8 @@ a:visited { color: #FFFFFF }
 }
 
 .intro_text{
-	margin-top:100px;
+	margin-top:80px;
+	width:900px;
 	color:#F00;
 	text-align:left;
 }
@@ -98,6 +99,8 @@ a:visited { color: #FFFFFF }
 /*Read More*/
 .button {
     width: 80px;
+	padding-left:5px;
+	padding-right:5px;
     text-align: center;
     font-size: 14px;
     background-color: #000;
@@ -126,29 +129,31 @@ content_whole{
 .image_odd{
 	width:380 px;
 	float:left;
-	margin-right:50px;
 	margin-bottom:50px;
 }
 
 .text_odd{
-	width:1000px;
+	width:800px;
+	float:right;
+	padding-top:100px;
+
 }
 
 .image_even{
 	clear:left;
 	width:380 px;
 	float:right;
-	margin-left:50px;
 	margin-bottom:50px;
 }
 
 .text_even{
-	width: 1000 px;
+	width: 800px;
+	padding-top:100px;
 
-}
+	}
 
 .footer {
-	clear:right;
+	clear:both;
 	width: 100%;
     background-color: #999999;
     height: 60px;

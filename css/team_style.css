@@ -105,9 +105,14 @@ color: #7ABBBF;
 .flag{	
 }
 
+
 .linkedin{
 	clear:left;
 	margin-top:30px;
+}
+
+.description{
+float:left;	
 }
 
 .button:hover{
@@ -115,7 +120,7 @@ color: #7ABBBF;
 }
 
 .map{
-	margin-top:-300px;
+	margin-top:-150px;
 	text-align:center;	
 }
 .footer {
