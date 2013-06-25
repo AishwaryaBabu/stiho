@@ -127,13 +127,14 @@ float:left;
 	clear:right;
 	width: 100%;
     background-color: #999999;
-    height: 60px;
+
 }
 .footer_container {
     margin: 0 auto;
     font-size: 14px;
     word-spacing: 10px;
     width: 1080px;
+	text-align:right;
 }
 .footer_container h2 { color: #000000 }
 
